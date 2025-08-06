@@ -1,5 +1,6 @@
 # 🐍 Importar todo el módulo Tkinter
 from tkinter import *
+import os
 
 
 a = 0
@@ -36,6 +37,10 @@ logo = PhotoImage(file = "img/btn-suma.png")
 label_logo = Label(Frame_1, image=logo)
 label_logo.place(x=10, y=10)
 
+
+
+
+
 # titulo = label(fr)
 titulo = Label(Frame_1, text = "Colegio San Jose Guanentá")
 titulo.config(bg="yellow", fg="blue", font=("Arial", 16))
@@ -54,6 +59,26 @@ label_a.place(x=390, y=120)
 label_a = Label(Frame_1, text = "b = ")
 label_a.config(bg="ivory2", fg="blue", font=("Arial", 16))
 label_a.place(x=585, y=120)  
+
+#Boton
+img_bt_sumar = PhotoImage(file = "img/boton_sumar.png")
+bt_sumar = Button(Frame_2, image = img_bt_sumar, width = 105, height = 105)
+bt_sumar.place(x=116, y=7)
+
+img_bt_borrar = PhotoImage(file = "img/boton_borrar.png")
+bt_borrar = Button(Frame_2, image = img_bt_borrar, width = 105, height = 105)
+bt_borrar.place(x=337, y=7)
+
+img_bt_salir = PhotoImage(file = "img/boton_salir.png")
+bt_salir = Button(Frame_2, image = img_bt_salir, width = 105, height = 105)
+bt_salir.place(x=558, y=7)
+
+# Area resultado
+
+t_resultado = Text(Frame_3, width =50, height =3)
+t_resultado.config(bg="green", fg="white", font= ("Courier", 20))
+t_resultado.pack()
+
 
 
 #el focus
